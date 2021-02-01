@@ -1,0 +1,15 @@
+.is_space{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.letter{
+    font-size: 4rem;
+    transition: 1s;
+}
+
+.letter:hover{
+    color: red;
+    font-size: 5rem;
+    transition: 1s;
+}
