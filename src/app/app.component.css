@@ -1,3 +1,39 @@
 .container{
     display: flex;
 }
+
+.aside_container{
+    z-index: 2;
+}
+
+.page_container{
+    z-index: 1;
+    color: #504e70;
+    font-family: "Roboto" , sans-serif;
+    letter-spacing:1px;
+    width: 100%;
+    padding: 100px 100px 100px 200px;
+    height: 100vh;
+}
+
+@media only screen and (max-width:1520px){
+    
+    .page_container{
+        height: max-content;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    html,body{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .page_container{
+        width: 100%;
+        padding: 50px;
+    }
+}

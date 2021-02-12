@@ -1,15 +1,31 @@
 .is_space{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .letter{
-    font-size: 4rem;
-    transition: 1s;
+    font-size: 3.5rem;
+}
+
+@keyframes jump{
+    0% {transform: scale(1);}
+    25% {transform: scale(0.8);}
+    50% {transform: scale(0.6);}
+    75% {transform: scale(1.2);}
+    100% {transform: scale(1);}
 }
 
 .letter:hover{
-    color: red;
-    font-size: 5rem;
-    transition: 1s;
+    color: #cc0000;
+    animation: jump;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
 }
+
+@media only screen and (max-width:1030px){
+    .letter{
+        font-size: 3rem;
+    }
+
+}
+
