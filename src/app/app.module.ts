@@ -27,6 +27,7 @@ import { StringCharacterComponent } from './home-page/string-character/string-ch
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

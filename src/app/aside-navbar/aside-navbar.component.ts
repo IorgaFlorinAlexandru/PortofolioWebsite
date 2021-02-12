@@ -9,7 +9,7 @@ export class AsideNavbarComponent implements OnInit {
 
   constructor() { }
 
-
+  nav_open=false
   //Not efficient should have made components of <a></a> but lazy and need to do the pages next
   is_active=1
   homepage_click(){
@@ -26,6 +26,25 @@ export class AsideNavbarComponent implements OnInit {
   }
   contactpage_click(){
     this.is_active=5
+  }
+
+  flag=false
+  show_flag(){
+    this.flag=true;
+  }
+  hide_flag(){
+    this.flag=false;
+  }
+
+
+  open_navbar(){
+    console.log("works")
+    if(this.nav_open==true){
+      this.nav_open=false
+    }
+    else{
+      this.nav_open=true
+    }
   }
 
   ngOnInit(): void {

@@ -1,0 +1,90 @@
+.projects_container{
+    height: auto;
+}
+
+.project_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card{
+    height: 500px;
+    flex-basis: 300px;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: rgb(251, 252, 250);
+    border: 1px solid rgb(207, 211, 214);
+    margin-right: 50px;
+    margin-top: 50px;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_img img{
+    width: 250px;
+    height: 270px;
+    border-radius: 5%;
+    margin-top: 5px;
+    border: 1px solid #cc0000;
+}
+
+.project_name{
+    margin-top: 10px;
+}
+
+.project_description{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project_links{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.project_links a{
+    color: #cc0000;
+    transition: 0.5s;
+}
+
+.project_links a:hover{
+    color:red;
+    transition: 0.5s;
+}
+
+.project_links a svg{
+    width: 40px;
+    height: 40px;
+}
+
+.card:hover{
+    border-color: #cc0000;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px grey;
+}
+
+@media only screen and (max-width:1520px){
+    .projects_container{
+        height: 74vh;
+    }
+}
+
+@media only screen and (max-width:1366px){
+    .projects_container{
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width:700px){
+    .card{
+        margin-right: 0;
+    }
+}
