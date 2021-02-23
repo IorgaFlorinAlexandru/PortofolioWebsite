@@ -25,7 +25,8 @@
 .more_info ul li{
     list-style: none;
     padding: 15px;
-    border-bottom: 1px solid #504e70;
+    border-bottom: 1px solid ;
+    border-color: inherit;
     width: 300px;
 }
 
@@ -37,6 +38,11 @@
     margin-top: 50px;
     max-width: 900px;
 }
+
+.dark_title{
+    color: white;
+}
+
 
 @media only screen and (max-width:1520px){
     .about_container{

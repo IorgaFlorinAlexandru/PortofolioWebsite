@@ -13,7 +13,7 @@
 .page_title{
     font-size: 1.5rem;
     margin-top: 50px;
-    color: #302e4d;
+    color: inherit;
 }
 
 .page_title_highlight{
@@ -39,10 +39,10 @@
 }
 
 .a_btn{
-    color: #504e70;
+    color: #ffffff;
     text-decoration: none;
-    border: 2px solid #cc0000;
-    border-radius: 5px;
+    background-color: #cc0000;
+    border-radius: 10px;
     transition: 0.5s;
     margin-right: 2rem;
     display: flex;
@@ -55,11 +55,14 @@
 }
 
 .a_btn:hover{
-    background-color: #cc0000;
-    color: white;
+    background-color: red;
     transition: 0.5s;
 }
 
+
+.dark_title{
+    color: white;
+}
 /* .page_content{
 } */
 

@@ -14,6 +14,13 @@
     width: 100%;
     padding: 100px 100px 100px 200px;
     height: 100vh;
+    transition: 0.5;
+}
+
+.dark_theme{
+    color:#ffffff;
+    background-color: #151515;
+    transition: 0.5;
 }
 
 @media only screen and (max-width:1520px){
@@ -34,6 +41,6 @@
 
     .page_container{
         width: 100%;
-        padding: 50px;
+        padding: 25px;
     }
 }
