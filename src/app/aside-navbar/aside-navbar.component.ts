@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-aside-navbar',
@@ -7,26 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsideNavbarComponent implements OnInit {
 
+  darktheme=false
+  @Output() get_val:EventEmitter<any>= new EventEmitter()
   constructor() { }
 
   nav_open=false
-  //Not efficient should have made components of <a></a> but lazy and need to do the pages next
-  is_active=1
-  homepage_click(){
-    this.is_active=1
-  }
-  aboutpage_click(){
-    this.is_active=2
-  }
-  skillspage_click(){
-    this.is_active=3
-  }
-  projectspage_click(){
-    this.is_active=4
-  }
-  contactpage_click(){
-    this.is_active=5
-  }
 
   flag=false
   show_flag(){
@@ -38,13 +23,22 @@ export class AsideNavbarComponent implements OnInit {
 
 
   open_navbar(){
-    console.log("works")
     if(this.nav_open==true){
       this.nav_open=false
     }
     else{
       this.nav_open=true
     }
+  }
+
+  dark_theme(){
+    if(this.darktheme){
+      this.darktheme=false;
+    }
+    else{
+      this.darktheme=true
+    }
+    this.get_val.emit(this.darktheme)
   }
 
   ngOnInit(): void {

@@ -33,8 +33,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Portofolio-Site';
-
+  darktheme=false
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
+
+  get_theme_val(val){
+    this.darktheme=val;
+  }
+
 }

@@ -8,7 +8,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 
 const routes: Routes = [
   { path: 'Homepage', component:HomePageComponent, data: {animation: 'HomePage'} },
-  { path: 'About', component:AboutPageComponent,data: {animation: 'AboutPage'}},
+  { path: 'About', component:AboutPageComponent,data: {animation: 'AboutPage',d_theme: 'darktheme'}},
   { path:'Skills', component:SkillsPageComponent,data: {animation: 'SkillsPage'}},
   { path:'Projects', component:ProjectsPageComponent,data: {animation: 'ProjectsPage'}},
   {path:'Contact', component:ContactPageComponent,data: {animation: 'ContactPage'}},

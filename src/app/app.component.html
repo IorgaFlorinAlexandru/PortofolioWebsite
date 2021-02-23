@@ -1,8 +1,8 @@
-<div class="container">
+<div [class.dark_theme]='darktheme' class="container">
   <div class="aside_container">
-    <app-aside-navbar></app-aside-navbar>
+    <app-aside-navbar (get_val)='get_theme_val($event)'></app-aside-navbar>
   </div>
-  <div [@routeAnimations]="prepareRoute(outlet)" class="page_container">
+  <div [@routeAnimations]="prepareRoute(outlet)" [class.dark_theme]='darktheme' class="page_container">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </div>

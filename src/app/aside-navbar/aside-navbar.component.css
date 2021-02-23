@@ -8,6 +8,8 @@
     background-color: rgb(240,244,247);
     border-right: 2px solid rgb(207, 211, 214);
     position: fixed;
+    color:#302e4d;
+    transition: 0.5s;
 }
 
 .logo{
@@ -18,10 +20,6 @@
 .logo h1{
     font-size: 3rem;
     font-family: "Roboto";
-}
-
-.logo_char{
-    color:#504e70;
 }
 
 .special{
@@ -62,15 +60,13 @@
     height: 100%;
     z-index: 1;
     transition: 0.5s;
-    color: #302e4d;
+    color: inherit;
     outline-width: 0;
 }
 
 
 .link_active{
     color: #cc0000;
-    cursor: default;
-
 }
 
 .link_icon{
@@ -122,10 +118,55 @@
     height: 40px;
 }
 
+.theme_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.th_btn{
+    background-color: inherit;
+    border: none;
+    transition: 0.5s;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    outline-width: 0;
+}
+
+.th_btn:hover{
+    transition: 0.5s;
+    background-color: red;
+    color: white;
+}
+
+.th_btn svg{
+    width: 2rem;
+    height: 2rem;
+    padding-top: 2.5px;
+}
+
+/* DARK THEME */
+.aside_dark{
+    background-color: #222222;
+    border-color: #393939;
+    color: #ffffff
+}
+
+.icon_dark{
+    background-color: #222222;
+}
+
+.th_btn_dark{
+    background-color: #cc0000;
+    color: white;
+}
+
+
+
 @media only screen and (max-width:700px){
     .aside_navbar{
         left: -100%;
-        transition: 0.5s;
     }
 
     .m_btn{

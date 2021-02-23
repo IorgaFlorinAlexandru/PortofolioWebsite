@@ -1,3 +1,8 @@
+.contact_container{
+    display: flex;
+    height: 100%;
+}
+
 
 .contact_form{
     display: flex;
@@ -8,6 +13,10 @@
 .msg{
     display: flex;
     flex-direction: column;
+}
+
+.op{
+    display: flex;
 }
 
 .op *{
@@ -27,7 +36,7 @@
     text-align: start;
     padding: 20px;
     font-size: 1.4rem;
-    background-color:rgb(251, 252, 250);
+    background-color:#ffffff;
     transition: 0.5s;
     font-family: "Lato";
 }
@@ -35,6 +44,7 @@
 .msg textarea{
     height: 200px;
     resize: vertical;
+    max-height: 400px;
 }
 
 .op *:hover, .msg *:hover{
@@ -48,22 +58,77 @@
     box-shadow: 2px 2px 5px grey;
 }
 
+.contact_me{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_me h1{
+    color: #cc0000;
+}
+
+.contact_me p{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.contact_me a{
+    color: #cc0000;
+    transition: 0.5s;
+}
+
+.contact_me a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.contact_me_icon svg{
+    width: 50px;
+    height: 50px;
+}
+
+.mrg_top{
+    margin-top: 50px;
+}
+
+
 @media only screen and (max-width:1520px){
     .contact_container{
-        height: 74vh;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
     }
     .op *, .msg *{
         width: 100%;
     }
+
+    .contact_me{
+        margin-top: 50px;
+        width: 100%;
+        flex-basis: auto;
+    }
     
 }
+
+@media only screen and (max-width:970px){
+
+    .op{
+        display: inline;
+    }
+
+    .op :nth-child(1){
+        margin-right: 0;
+    }
+
+}
+
 
 @media only screen and (max-width:700px){
     .op :nth-child(1){
         margin-right: 0;
     }
 
-    .contact_container{
-        height: 84vh;
-    }
 }
