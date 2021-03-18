@@ -91,3 +91,14 @@
         margin-right: 0;
     }
 }
+
+@media only screen and (max-width:550px){
+    .card{
+        transition: none;
+    }
+
+    .card:hover{
+        transition: none;
+    }
+
+}
